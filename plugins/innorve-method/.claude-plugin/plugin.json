@@ -1,0 +1,20 @@
+{
+  "$schema": "https://www.schemastore.org/claude-plugin.json",
+  "name": "innorve-method",
+  "version": "0.1.0",
+  "description": "The Innorve Method — eight teaching skills that coach you through architecting AI-native systems. From blank, with your own name on every line.",
+  "author": "Innorve, Inc.",
+  "homepage": "https://innorve.academy/method",
+  "license": "Apache-2.0",
+  "keywords": [
+    "ai-architecture",
+    "ai-native",
+    "agents",
+    "evals",
+    "governance",
+    "policy-as-code",
+    "skill-contracts",
+    "compliance",
+    "innorve-method"
+  ]
+}

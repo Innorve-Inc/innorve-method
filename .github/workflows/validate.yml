@@ -1,0 +1,33 @@
+name: Validate Skills
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Validate skill manifests
+        run: bun scripts/validate-skills.ts
+
+      - name: Check marketplace JSON
+        run: |
+          if ! cat .claude-plugin/marketplace.json | python3 -c "import sys, json; json.load(sys.stdin)"; then
+            echo "Invalid marketplace.json"
+            exit 1
+          fi
+          if ! cat plugins/innorve-method/.claude-plugin/plugin.json | python3 -c "import sys, json; json.load(sys.stdin)"; then
+            echo "Invalid plugin.json"
+            exit 1
+          fi
+          echo "✓ JSON manifests valid"
