@@ -37,18 +37,28 @@ This separation is deliberate. The discipline is open; the artifact you build is
 
 Most AI education today teaches one of two things:
 
-1. **How to use AI** (prompting, ChatGPT-as-a-tool, no-code agents)
-2. **How to train AI** (academic ML, model architecture, fine-tuning)
+1. **How to use AI** — prompting, chat tools, no-code agents
+2. **How to train AI** — academic ML, model architecture, fine-tuning
 
 Almost no one teaches the third thing — how to *architect* AI into organizations so the resulting systems are reliable, safe, auditable, and acceptable to compliance officers, regulators, and CISOs.
 
-That's the AI-Native Architect role. It is the most-asked-for and least-taught skill in software in 2026.
+That is the work of the **AI-Native Architect**. It is the most-asked-for and least-taught skill in software right now, and the gap is widening every quarter.
 
-We named the role and built a credentialing body around it: [Innorve Academy](https://innorve.academy). This repository is the open methodology that academy teaches.
+We named the role, distilled the discipline that produces it, and founded the credentialing body that certifies it: [Innorve Academy](https://innorve.academy). The methodology you are reading is what the Academy teaches. We publish it openly because a discipline cannot become a profession behind a paywall.
 
-We took a page from the institutions that built professions before us. OWASP did this for application security. PMI did it for project management. IEEE did it for engineering. None of them sold the methodology — they published it openly and built the community, the credential, and the directory of certified practitioners around it.
+The contract is intentional and durable: **the methodology is open, the brand and the credential are not.** Anyone can study the Innorve Method, build with it, cite it, teach it. Only Innorve Academy can issue the Innorve Architect credential. That is what makes the credential meaningful.
 
-That's what we're doing here.
+---
+
+## Innorve Native Mode — the working posture
+
+The skills above teach techniques. The Mode is the doctrine that orders them.
+
+> **Architect before automating. Evaluate before trusting. Govern before scaling. Evidence before claims. Portability before tool lock-in. Human accountability before agent autonomy.**
+
+Six tenets, applied in order. Architects who internalize the Mode produce AI systems that ship, survive, audit, and scale. Architects who skip a tenet produce systems that hold up in demos and collapse under pressure.
+
+Read the full doctrine: [`docs/INNORVE-NATIVE-MODE.md`](docs/INNORVE-NATIVE-MODE.md)
 
 ---
 
